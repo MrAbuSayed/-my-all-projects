@@ -1,0 +1,526 @@
+
+
+ @media screen and (min-width:700px) {
+    
+    body{
+       margin: 0;
+       padding: 0;
+       background-color: rgb(135, 135, 135);
+    }
+    .{
+      box-sizing: border-box;
+   }
+ 
+     
+   
+     .hd h1{
+         padding-top: 20px;
+         text-align: center;
+         background-color: rgb(227, 217, 202);
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     }
+     
+     .lnk{
+         
+     background-color: rgb(168, 206, 206);
+     height: 50px;
+     text-align: center;
+      
+     }
+     
+     .lnk a{
+           
+         
+         text-decoration: none;
+         font-style: italic;
+         font-weight: bold;
+         font-size: 1.3rem;
+         /* background-color: rgb(129, 71, 183); */
+         color: rgb(41, 5, 46);
+        top: 10px;
+         margin-left: 50px;
+         /* border: d rgb(111, 76, 124);
+         border-radius: 5px; */
+     
+     
+      }
+      .lnk a:hover{
+       border: 1px solid rgb(111, 76, 124);
+       border-radius: 5px; 
+       background-color: rgb(32, 16, 46);
+       color: wheat;
+      }
+      .lnk{
+      margin-left: 700px;
+      width: 40rem;
+       position: fixed;
+        
+      }
+       .tct h1{
+          font-style: italic;
+          margin-left: 30px;
+       }
+     
+      Strong{
+        color: rgb(0, 84, 42);
+      }
+     
+      .bgimg{
+      background-image: url("https://i.postimg.cc/HLTMKnMZ/fgf.png");
+      height: 50px;
+     
+     
+      }
+      .bgimg h1{
+        margin-top: 0;
+        padding-top: 10px;
+        text-align: center;
+        font-family: monospace;
+        font-style: italic;
+        font-weight: bold;
+      }
+      
+      .img{
+         margin-top: 50px;
+       margin-left: 200px;
+     
+      }
+     
+      .img img{
+         width: 350px;
+         height: 450px;
+         border: 1px solid  rgb(135, 135, 135);
+         border-radius: 20px;
+      }
+       
+      .txt{
+     
+         margin-left:200px ;
+      }
+     
+      .t{
+       
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       font-style: italic;
+ 
+      }
+          
+      .frm{
+       margin-top: 40px;
+      margin-left: 200px;
+       
+      }
+ 
+      .nme{
+        width: 300px;
+        font-size: 1.2rem;
+       padding: 10px;
+       border: 2px solid rgb(99, 91, 91);
+       border-radius: 9px;
+       color: rgb(12, 161, 172);
+       background-color: rgb(151, 193, 151);
+      }
+      .nme:focus{
+       
+       border: 2px solid rgb(208, 0, 0);
+       background-color: rgb(192, 153, 229);
+      }
+ 
+      #msg{
+       width: 350px;
+       height: 90px;
+       font-size: 1.2rem;
+       border: 2px solid rgb(85, 80, 80);
+       border-radius: 9px;
+       background-color: rgb(171, 210, 171);
+ 
+ 
+    }
+    #msg:focus{
+       background-color: whitesmoke;
+    }
+ 
+    #sbm{
+    font-size: 1rem;
+    padding: 10px 25px;
+    color: rgb(216, 162, 174);
+    border-radius: 6px;
+    border: none;
+    font-weight: bolder;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(8, 44, 44);
+ 
+    }
+    #sbm:focus{
+       background-color: dimgrey;
+       color: wheat;
+    }
+ 
+ 
+    #nm {
+       font-style: italic;
+       border: 2px solid rgb(33, 1, 41);
+       width: 450px;
+       border-radius: 10px;
+       margin: 15px auto;
+       margin-top: 30px;
+     
+     }
+ 
+ 
+    #mn{
+ 
+ 
+       display: flex;
+       flex-direction: row;
+       
+       width: 900px;
+       margin: 0 auto;
+     
+     }
+ 
+    .crd{ 
+        
+       width: 280px;
+       background-color: blueviolet;
+       border: 3px solid rgb(28, 1, 41);
+       border-radius: 10px;
+       text-align: center;
+       margin: 10px;
+     }
+     .crd:hover{
+       box-shadow: 6px 7px 5px rgb(23, 3, 41) ;
+     }
+     
+     .crd h1{
+       background-color: rgb(129, 107, 79);
+      font-style: italic;
+     }
+     .crd img{
+       
+       height: 90px;
+       width: 90px;
+       border-radius: 50px;
+       border: 4px solid rgb(23, 7, 37);
+       margin: 0 auto;
+     }
+     .crd p{
+       font-style: italic;
+       font-size: 1.2rem;
+       padding: 10px;
+       text-align: justify;
+     }
+     .crd h3{
+       background-color: rgb(129, 107, 79);
+      font-style: italic;
+     }
+     
+        /*Card end*/ 
+    
+ 
+     
+      .ftr {
+       background-color: black;
+       text-align: center;
+       padding:20px;
+       flex-direction: row;
+       /* width: 500px; */
+       /* border: 2px solid cadetblue; */
+    
+      
+       
+   }
+   .l{
+       background-color:black ;
+       padding-top: 0;
+       padding-bottom: 0;
+       font-size: 2rem;
+       border: none;
+       border-radius: 5px;
+       margin-left: 15px;
+       color: rgb(0, 246, 222);
+   
+   }
+ 
+   .l:focus{
+ 
+    color: rgb(185, 50, 145);
+   }
+   
+ 
+   #txf{
+    color: rgb(224, 221, 255);
+    font-size: 1.2rem;
+    font-weight: lighter;
+   }
+ 
+  }
+ 
+ 
+  /* for mobail */
+ 
+  @media screen and (max-width:700px) {
+ 
+ 
+    body{
+       margin: 0;
+       background-color: rgb(135, 135, 135);
+    }
+    .{
+      box-sizing: border-box;
+   }
+ 
+ 
+  
+   .lnk{
+         
+    background-color: rgb(168, 206, 206);
+    height: 270px;
+    text-align: center;
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    }
+    
+    .lnk a{
+          width: 300px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        text-decoration: none;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1.3rem;
+        background-color: rgb(129, 71, 183);
+        color: rgb(41, 5, 46);
+         top: 10px;
+        margin: 5px auto;
+        border: 2px solid rgb(111, 76, 124);
+        border-radius: 5px;
+        
+    
+     }
+     .lnk a:hover{
+        width: 320px;
+        font-size:1.5rem ;
+        background-color: rgb(20, 7, 61);
+       color: rgb(206, 231, 248);
+     }
+  
+ 
+     .hd h1{
+       margin-top: 270px;
+         padding-top: 20px;
+         text-align: center;
+         background-color: rgb(227, 217, 202);
+         font-family: monospace;
+         font-style: oblique;
+         
+         
+     }
+     
+     
+ 
+      .tct h1{
+       font-style: italic;
+       margin-left:20px;
+       
+    }
+   Strong{
+     color: rgb(0, 84, 42);
+   }
+     
+ 
+      .bgimg{
+      background-image: url("https://i.postimg.cc/HLTMKnMZ/fgf.png");
+       
+      height: 50px;
+     
+     
+      }
+      .bgimg h1{
+        margin-top: 0;
+        padding-top: 10px;
+        text-align: center;
+        font-family: monospace;
+        font-style: italic;
+        font-weight: bold;
+      }
+      
+      .img{
+         margin-top: 50px;
+       margin-left: 50px;
+     
+      }
+     
+      .img img{
+         width: 150px;
+         height: 250px;
+         border: 1px solid  rgb(135, 135, 135);
+         border-radius: 20px;
+      }
+       
+      .txt{
+     
+         margin-left:50px ;
+      }
+ 
+      .t{
+        font-weight: 600;
+       font-style: italic;
+       color: rgb(32, 11, 32);
+        
+     }
+     
+ 
+ 
+     .frm{
+       margin-top: 40px;
+      margin-left: 50px;
+       
+      }
+ 
+      .nme{
+        width: 300px;
+        font-size: 1.2rem;
+       padding: 10px;
+       border: 2px solid rgb(99, 91, 91);
+       border-radius: 9px;
+       color: rgb(12, 161, 172);
+       background-color: rgb(151, 193, 151);
+      }
+      .nme:focus{
+       
+       border: 2px solid rgb(208, 0, 0);
+       background-color: rgb(192, 153, 229);
+      }
+ 
+      #msg{
+       width: 350px;
+       height: 90px;
+       font-size: 1.2rem;
+       border: 2px solid rgb(85, 80, 80);
+       border-radius: 9px;
+       background-color: rgb(171, 210, 171);
+ 
+ 
+    }
+    #msg:focus{
+       background-color: whitesmoke;
+    }
+ 
+    #sbm{
+    font-size: 1rem;
+    padding: 10px 25px;
+    color: rgb(216, 162, 174);
+    border-radius: 6px;
+    border: none;
+    font-weight: bolder;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(8, 44, 44);
+ 
+    }
+    #sbm:focus{
+       background-color: dimgrey;
+       color: wheat;
+    }
+ 
+    #nm {
+       font-style: italic;
+       border: 2px solid rgb(33, 1, 41);
+       width: 450px;
+       border-radius: 10px;
+       margin: 15px auto;
+       margin-top: 30px;
+     
+     }
+ 
+ 
+     
+    #mn{
+       display: flex;
+      flex-direction: column;
+      text-align: center;
+       
+      width: 280px;
+      margin: 0 auto;
+      
+     
+     }
+     
+ 
+ 
+    .crd{ 
+     
+       width: 280px;
+       background-color: blueviolet;
+       border: 3px solid rgb(28, 1, 41);
+       border-radius: 10px;
+       text-align: center;
+       margin: 10px;
+     }
+     .crd:hover{
+       box-shadow: 6px 7px 5px rgb(23, 3, 41) ;
+     }
+     .crd h1{
+       background-color: rgb(129, 107, 79);
+      font-style: italic;
+     }
+     .crd img{
+       
+       height: 90px;
+       width: 90px;
+       border-radius: 50px;
+       border: 4px solid rgb(23, 7, 37);
+       margin: 0 auto;
+     }
+     .crd p{
+       font-style: italic;
+       font-size: 1.2rem;
+       padding: 10px;
+       text-align: justify;
+     }
+     .crd h3{
+       background-color: rgb(129, 107, 79);
+      font-style: italic;
+     }
+     /*Card end*/
+ 
+ 
+     .ftr{
+       background-color: rgb(17, 0, 19);
+       text-align: center;
+       padding: 14px;
+       flex-direction: row;
+       border: 2px dotted rgb(30, 2, 56);
+       margin: auto auto;
+       word-spacing: 10px;
+   }
+   .l{
+     
+       font-size: 2rem;
+       padding-top: 0;
+       padding-bottom: 0;
+       margin-left: 5px;
+       border: none;
+       border-radius: 5px;
+       color: rgb(0, 113, 174);
+       background-color: rgb(17, 4, 19);
+ 
+   }
+ 
+   .l:focus{
+ 
+    color: rgb(51, 192, 51);
+   }
+   #txf{
+    color: rgb(224, 221, 255);
+    font-size: 1.2rem;
+    font-weight: lighter;
+   }
+ 
+ 
+   
+     
+  }
+ 
