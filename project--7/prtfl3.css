@@ -1,0 +1,562 @@
+
+
+@media screen and (min-width:1000px) {
+    
+
+
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+.body{
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+    /* align-items: center ;  */
+    justify-content: space-between;
+    background: linear-gradient(deeppink,purple) ;
+    padding: 0rem 2rem;
+  
+}
+
+header{
+    width: 22rem;
+    background: rgba(146, 150, 154, 0.307);
+    backdrop-filter: blur(.7rem);
+    box-shadow: 0 1rem 2rem rgba(59, 63, 67, 0.356);
+    border-radius: 20px;
+    text-align: center;
+    padding: 1rem;
+    margin-right: 3rem;
+}
+
+header .user{
+    padding-top: 1rem;
+}
+
+header .user img{
+    height: 10rem;
+    width: 10rem;
+    margin: 1rem 0;
+    border-radius: 50%;
+   box-shadow: 0 0 0 .6rem rgba(57, 59, 61, 0.207);
+    object-fit: cover;
+}
+
+
+header .user .name{
+    font-family: monospace;
+    font-size: 2rem;
+
+}
+
+header .user .post{
+    font-size: 1.1rem;
+    font-family: cursive;
+    color: wheat;
+}
+
+header .navber{
+    padding:1rem;
+}
+
+header .navber ul li{
+    margin: 1rem 0;
+    list-style: none;
+}
+
+header .navber ul li a{
+    display: block;
+    text-decoration: none;
+    font-family: monospace;
+    margin: 0 1.5rem;
+    padding: .7rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background: rgba(128, 130, 132, 0.39);
+    box-shadow: 0 1rem 2rem rgba(57, 59, 61, 0.207);
+    border-radius: .6rem;
+    transition: .9s;
+}
+
+header .navber ul li a:hover{
+
+    background: rgba(248, 251, 255, 0.646);
+    color: rgba(83, 3, 117, 0.774);
+    font-weight: bolder;
+
+}
+
+
+header .navber ul li a:focus{
+
+    background: rgb(255, 113, 88);
+    color: rgba(54, 3, 76, 0.97);
+    font-weight: bolder;
+}
+
+/* content seassion start */
+
+
+.container{
+
+    width: 48rem;
+    height: 100vh;
+    background: rgba(146, 150, 154, 0.307);
+    backdrop-filter: blur(1rem);
+    box-shadow: 0 1rem 2rem rgba(59, 63, 67, 0.356);
+    border-radius: 20px;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+
+section{
+    min-height: 100vh;
+}
+
+
+.heading{
+
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: cursive;
+    color: rgb(2, 47, 25);
+    text-align: center;
+}
+/* home section starts */
+.home{
+    min-height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-flow: column;
+   position: relative;
+   margin-bottom: 1rem;
+ 
+}
+
+.home h3 {
+    font-size: 1.6rem;
+    font-weight: lighter;
+    color: rgb(0, 233, 58);
+    font-family: monospace;
+
+}
+
+.home h3 span{
+    font-size: 2rem;
+    font-weight:bold;
+   font-family: cursive;
+    color: chartreuse;
+}
+
+.home .post {
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    font-style: italic;
+    font-family: monospace;
+}
+
+.home .post span{
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+
+.btn{
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
+    background: rgba(210, 70, 126, 0.541);
+    color: rgb(12, 54, 132);
+    border-radius: .5rem;
+    font-family: cursive;
+    font-weight: bold;
+    transition: .5s;
+    
+}
+.btn:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.home .share{
+   position: absolute;
+   /* left: 50%; */
+   bottom: 0rem;
+   /* transform: translateX(-50%); */
+   display: flex;
+   padding: 1rem;
+   background: rgba(183, 187, 192, 0.307);
+   box-shadow: 0 0 2rem  rgba(146, 150, 154, 0.307);
+   border-radius: .5rem;
+   
+}
+
+.home .share a {
+    background: rgba(195, 197, 200, 0.346);
+    box-shadow: 0 0 1rem rgba(128, 130, 132, 0.39);
+    padding: .3rem 1rem;
+    margin: 1rem;
+    color: rgb(2, 27, 25);
+    font-size: 2.5rem;
+    border-radius: .57rem;
+    transition: .5s;
+}
+
+.home .share a:hover{
+    background: rgba(112, 169, 183, 0.346);
+    color: rgba(212, 241, 241, 0.838);
+}
+
+/* home section Ends */
+
+
+/* about section starts */
+
+.about{
+    /* min-height: 100%; */
+    padding: 2rem;
+    
+}
+
+.about .abt-contant h3{
+    padding: 1rem;
+    text-align: 
+    center;
+    color: rgba(230, 216, 198, 0.807);
+    font-size: 1.5rem;
+    font-family: monospace;
+
+}
+
+
+.about .abt-contant p{
+    padding: .2rem 5rem;
+    color: rgba(230, 216, 198, 0.807);
+    font-size: 1.1rem;
+    font-family: cursive;
+    font-weight: bold;
+
+
+}
+
+.about .skills{
+    padding: .5rem;
+    background: rgba(146, 150, 154, 0.764);
+    border-radius: 1rem;
+}
+
+ .about .skills .prgs{
+    padding:.5rem 1rem;
+    background: rgba(49, 51, 53, 0.307);
+    margin: .4rem 0;
+    box-shadow: 0 0 1rem rgba(146, 150, 154, 0.307);
+    border-radius: 1rem;
+ }
+
+ .about .skills .prgs h3{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: rgba(118, 195, 223, 0.848);
+    font-family: cursive;
+ }
+
+ .about .skills .prgs .bar{
+
+    position: relative;
+    width: 100%;
+    height: .5rem;
+    margin: 0;
+    background: blueviolet;
+    border-radius: 1rem;
+ }
+
+ .about .skills .prgs .bar span{
+    position: absolute;
+    border-radius: 1rem;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+ }
+
+ .about .skills .prgs:nth-child(1) .bar span{
+    position: absolute;
+    border-radius: 1rem;
+    height: 100%;
+    width: 85%;
+    background-color: #fff;
+ }
+
+ .about .skills .prgs:nth-child(2) .bar span{
+    position: absolute;
+    border-radius: 1rem;
+    height: 100%;
+    width: 65%;
+    background-color: #fff;
+ }
+ .about .skills .prgs:nth-child(3) .bar span{
+    position: absolute;
+    border-radius: 1rem;
+    height: 100%;
+    width: 75%;
+    background-color: #fff;
+ }
+ .about .skills .prgs:nth-child(4) .bar span{
+    position: absolute;
+    border-radius: 1rem;
+    height: 100%;
+    width: 65%;
+    background-color: #fff;
+ }
+ .about .skills .prgs:nth-child(5) .bar span{
+    position: absolute;
+    border-radius: 1rem;
+    height: 100%;
+    width: 75%;
+    background-color: #fff;
+ }
+ .about .skills .prgs:nth-child(6) .bar span{
+    position: absolute;
+    border-radius: 1rem;
+    height: 100%;
+    width: 55%;
+    background-color: #fff;
+ }
+
+
+
+/* about section Ends  */
+  
+
+
+/* Services Section Starts  */
+     
+
+.service{
+
+    padding: 1rem;
+}
+
+.service .box-cntnr{
+      padding: 2rem 0;
+      display: flex;
+     flex-wrap: wrap;
+      align-items: center;
+
+}
+
+.service .box-cntnr .box{
+      margin: 1rem;
+      padding: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 1rem 2rem rgba(146, 150, 154, 0.307);
+      background: rgba(118, 195, 223, 0.348);
+      text-align: center;
+      width: 20rem;
+
+
+}
+
+.service .box-cntnr .box p{
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-family: monospace;
+    text-align: left;
+}
+
+
+.service .box-cntnr .box i{
+    font-size: 3rem;
+    color: rgb(89, 212, 140); 
+    padding: 1rem;
+    
+}
+/* Services Section ends  */
+
+
+
+/*  Education Section start */
+   
+
+.education{
+    padding: 1rem;
+}
+
+.education  .box-cntnr{
+    padding: 2rem 0;
+    display: flex;
+   flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.education .box-cntnr .box{
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: .2rem;
+    box-shadow: 0 1rem 2rem rgba(146, 150, 154, 0.307);
+    background: rgba(196, 227, 238, 0.348);
+    text-align: center;
+    width:20rem;
+
+
+}
+
+.education .box-cntnr .box i{
+
+    font-size: 3rem;
+    padding: 1rem;
+    color: darkslategray;
+}
+
+.education .box-cntnr .box h3{
+    color: rgb(255, 251, 27);
+    font-family: cursive;
+}
+
+.education .box-cntnr .box h4{
+    color: chartreuse;
+    font-weight: lighter;
+   font-family: cursive;
+
+}
+
+.education .box-cntnr .box p{
+    font-size: 1rem;
+    font-family: monospace;
+    font-weight: lighter;
+    color: beige;
+
+}
+
+
+
+/*  Education Section End */
+
+
+/* Contact Section Start */
+
+
+.contact{
+    padding: 2rem;
+}
+
+.contact .box{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.contact .box .box1{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(159, 176, 182, 0.375);
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.contact .box .box1 .tes{
+    width: 13rem;
+    padding: 1rem;
+    margin: .4rem;
+    background-color: rgba(254, 254, 254, 0.289);
+    color: rgb(255, 247, 247);
+    border-radius: .5rem;
+   
+}
+
+
+.contact .box .box1 .tes:focus{
+
+     box-shadow: 0 1rem 2rem rgba(118, 195, 223, 0.848);
+
+}
+
+.contact .box .box1 #textarea{
+    width: 26rem;
+    height: 13rem;
+    resize: none;
+    margin: 1rem;
+    padding: 1rem;
+    background: rgba(136, 133, 137, 0.616);
+    color: antiquewhite;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+     
+}
+
+.contact .box .box1 #textarea:focus{
+
+    box-shadow: 0 1rem 2rem rgba(118, 195, 223, 0.848);
+
+}
+
+.contact .box .box2{
+ 
+    padding: 1rem;
+    background: rgba(230, 216, 198, 0);
+    margin: 3rem 0 1rem 0rem ;
+   
+    
+}
+
+.contact .box .box2 .adrsemph{
+
+    font-size: 1.1rem;
+    color: rgb(8, 226, 164);
+    margin: 1.3rem;
+    font-weight: lighter;
+}
+/* Contact Section ends */
+
+
+
+
+
+/* content seassion ends */
+
+
+
+
+
+/* theme-togglerr   seassion starts */
+
+.theme-toggler{
+    background: rgba(255, 255, 255, 0.246);
+    box-shadow: 0 1rem 2rem rgba(29, 63, 16, 0.3);
+    border-radius: .7rem;
+    backdrop-filter: blur(.5rem);
+    height: 29rem;
+    margin-top: 10rem;
+    
+    
+}
+
+.theme-toggler span{
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 2rem;
+    box-shadow:   0 0 0 .5rem rgba(255, 255, 255, 0.275),0 1rem 2rem rgba(0, 0, 0, 0.49);
+               
+              
+
+}
+
+/* theme-togglerr   seassion ends */
+
+
+
+}

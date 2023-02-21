@@ -1,0 +1,743 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background: rgba(132, 205, 161, 0.607);
+  overflow-x: hidden;
+}
+
+.btn {
+  font-size: 1.3rem;
+  background: linear-gradient(rgb(228, 18, 116), rgb(215, 0, 154));
+  padding: 0.2rem 0.6rem;
+  margin: 0;
+  color: rgb(4, 255, 255);
+}
+.btn:focus {
+  background: linear-gradient(rgba(2, 67, 32, 0.719), rgba(78, 0, 99, 0.67));
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.heading h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(84, 89, 3);
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  font-style: oblique;
+  margin: 2rem 0;
+  border-bottom: 0.3rem dotted black;
+}
+.heading h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(79, 3, 89);
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  font-style: oblique;
+  margin: 0;
+  border-bottom: 0.3rem solid rgb(23, 47, 1);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(37, 126, 29, 0.209);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+}
+.header .logo {
+  font-size: 2rem;
+  color: rgb(146, 83, 0);
+  font-family: fantasy;
+  font-style: italic;
+}
+.header .logo span {
+  color: rgba(2, 76, 17, 0.829);
+}
+.header .bar {
+  display: block;
+  color: brown;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+}
+.header .bar:hover {
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.navber {
+  display: none;
+  height: 4rem;
+  width: 100vw;
+  background: rgba(255, 255, 255, 0.616);
+  text-align: center;
+}
+.navber ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 auto;
+}
+.navber ul li {
+  font-size: 1.1rem;
+  margin: 1rem;
+}
+.navber ul li a {
+  text-decoration: none;
+  color: rgb(93, 93, 4);
+  padding: 0.2rem 0.4rem;
+  color: rgb(37, 1, 36);
+  font-weight: 450;
+}
+.navber ul li a:hover {
+  font-style: italic;
+}
+.navber ul li:hover {
+  text-decoration: overline;
+}
+
+.home {
+  overflow-x: hidden;
+  padding: 2rem;
+  margin: 7rem 4rem;
+  background-image: url("bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home .nm {
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  font-size: 4rem;
+  color: aliceblue;
+  margin: 0.5rem;
+  padding: 1rem;
+  font-family: cursive;
+  font-style: italic;
+  border-radius: 1rem;
+}
+.home .nm span {
+  color: rgba(224, 11, 153, 0.924);
+}
+.home h3 {
+  font-size: 3rem;
+  color: aqua;
+  -webkit-backdrop-filter: 1rem;
+          backdrop-filter: 1rem;
+  font-family: monospace;
+  font-style: italic;
+}
+.home .title {
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 3rem;
+  color: rgb(138, 214, 214);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.about {
+  padding: 1rem;
+  margin: 0 1rem;
+}
+.about .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .row .image {
+  text-align: center;
+}
+.about .row .image img {
+  height: 30rem;
+  width: 20rem;
+  box-shadow: 0 1rem 2rem rgba(95, 5, 74, 0.423);
+  border-radius: 0.5rem;
+}
+.about .row .text {
+  padding: 2rem;
+}
+.about .row .text h1 {
+  color: darkslategray;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.about .row .text p {
+  font-size: 1.1rem;
+  color: cadetblue;
+  text-align: justify;
+  font-family: monospace;
+}
+
+.skill {
+  padding: 1rem;
+  margin: 1rem;
+}
+.skill .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.skill .row .txt {
+  border: 3px solid rgba(0, 59, 22, 0.704);
+  padding: 1rem;
+  width: 20rem;
+  margin: 1rem;
+  border-radius: 0.6rem;
+  transition: 0.5s;
+}
+.skill .row .txt h4 {
+  text-align: center;
+  color: cadetblue;
+  font-weight: bold;
+}
+.skill .row .txt p {
+  font-size: 1rem;
+  color: rgb(1, 27, 28);
+  font-weight: lighter;
+  font-family: monospace;
+}
+.skill .row .txt p h5 {
+  text-align: right;
+  font-weight: bolder;
+  color: cadetblue;
+}
+.skill .row .txt .bar {
+  width: 100%;
+  height: 0.5rem;
+  background-color: aliceblue;
+  position: relative;
+  border-radius: 1rem;
+}
+.skill .row .txt .bar span {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 0;
+  background: rgb(255, 255, 255);
+  border-radius: 1rem;
+}
+.skill .row .txt .bar1:hover span {
+  transition: 1s;
+  width: 85%;
+  background: rgb(103, 8, 120);
+}
+.skill .row .txt .bar2:hover span {
+  transition: 1s;
+  width: 75%;
+  background: rgb(103, 8, 120);
+}
+.skill .row .txt .bar3:hover span {
+  transition: 1s;
+  width: 65%;
+  background: rgb(103, 8, 120);
+}
+.skill .row .txt .bar4:hover span {
+  transition: 1s;
+  width: 73%;
+  background: rgb(103, 8, 120);
+}
+.skill .row .txt .bar5:hover span {
+  transition: 1s;
+  width: 67%;
+  background: rgb(103, 8, 120);
+}
+.skill .row .txt .bar6:hover span {
+  transition: 1s;
+  width: 74%;
+  background: rgb(103, 8, 120);
+}
+.skill .row .txt:hover {
+  background-color: rgba(2, 70, 38, 0.387);
+  box-shadow: 0 1rem 2rem rgba(0, 28, 33, 0.572);
+}
+.skill .row .txt:hover h4 {
+  color: antiquewhite;
+}
+
+.education {
+  padding: 1rem;
+  margin: 1rem;
+}
+.education .row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.education .rowAnim {
+  position: relative;
+  right: 10rem;
+}
+.education .row .edu {
+  width: 20rem;
+  padding: 1rem;
+  border: 0.5px solid darkcyan;
+  border-radius: 0.4rem;
+  text-align: center;
+  transition: 0.4s;
+}
+.education .row .edu h4 {
+  font-weight: bold;
+  font-family: monospace;
+  color: rgb(51, 1, 54);
+  margin: 0;
+}
+.education .row .edu h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.education .row .edu:hover {
+  background-color: rgba(47, 79, 79, 0.483);
+  box-shadow: 0 1rem 2rem rgb(67, 39, 3);
+}
+.education .row2, .education .row3 {
+  margin-left: -23rem;
+}
+.education .rows {
+  margin-left: 10rem;
+  transition: 1.5s;
+}
+.education .row1 {
+  margin-right: -50rem;
+}
+.education .row1Anim {
+  margin-right: 3rem;
+  transition: 1.5s;
+}
+
+.service {
+  padding: 1rem;
+  margin: 1rem;
+}
+.service .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.service .row .work {
+  text-align: center;
+  border: 1px solid red;
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgb(77, 2, 88);
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+.service .row .work i {
+  font-size: 3rem;
+  padding: 0.5rem;
+  color: rgb(61, 35, 2);
+}
+.service .row .work h3 {
+  font-size: 1.5rem;
+  color: rgba(36, 70, 1, 0.659);
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.service .row .work p {
+  font-size: 1rem;
+  font-family: monospace;
+  font-style: italic;
+  font-weight: lighter;
+}
+.service .row .work:hover {
+  background-color: rgba(4, 78, 78, 0.687);
+  box-shadow: 0 1rem 2rem;
+}
+.service .row .work:hover i {
+  color: rgb(169, 199, 2);
+}
+.service .row .work:hover h3 {
+  color: cornsilk;
+}
+.service .row .work:hover p {
+  color: azure;
+}
+
+.portfolio {
+  padding: 1rem;
+  margin: 1rem;
+}
+.portfolio .control {
+  text-align: center;
+  margin: 1rem 0;
+}
+.portfolio .control ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.portfolio .control ul li {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 3px;
+  transition: 0.4s;
+}
+.portfolio .control ul li button {
+  font-size: 1.1rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: rgb(47, 79, 79);
+  color: azure;
+  font-weight: bold;
+}
+.portfolio .control ul li button:focus {
+  background-color: rgba(47, 79, 79, 0.431);
+}
+.portfolio .imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.portfolio .imgs .webDesign {
+  width: 58rem;
+}
+.portfolio .imgs .webDesign .wpim {
+  width: 18rem;
+  height: 12rem;
+  margin: 0.2rem;
+}
+.portfolio .imgs .grafixDsn {
+  width: 50rem;
+}
+.portfolio .imgs .grafixDsn .grim {
+  width: 15rem;
+  height: 10rem;
+  margin: 0.2rem;
+}
+.portfolio .imgs .grafixDsn .tall {
+  width: 15rem;
+  height: 20rem;
+  margin: 0.2rem;
+}
+.portfolio .imgs .codeer {
+  width: 48rem;
+}
+.portfolio .imgs .codeer .cdim {
+  width: 15rem;
+  height: 10rem;
+  margin: 0.2rem;
+}
+
+.contact {
+  margin: 3rem;
+}
+.contact .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .row .row1 {
+  margin: 1rem;
+}
+.contact .row .row1 .addrs {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .row .row1 .addrs h4 {
+  font-size: 1.2rem;
+  color: rgb(67, 2, 61);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+.contact .row .row2 {
+  height: auto;
+  width: 50rem;
+  border: 1px solid rgb(146, 146, 6);
+  border-radius: 1rem;
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+}
+.contact .row .row2 .form {
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+.contact .row .row2 .form .tens {
+  height: 3rem;
+  width: 70%;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1rem;
+  resize: none;
+}
+.contact .row .row2 .form .tens:focus {
+  box-shadow: 0 0.4rem 0.8rem rgb(170, 124, 213);
+}
+.contact .row .row2 .form #textarea {
+  height: 10rem;
+  width: 90%;
+  background: none;
+  outline: none;
+  border: 2px solid rgb(0, 33, 30);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  resize: none;
+}
+.contact .row .row2 .form #textarea:focus {
+  box-shadow: 0 1rem 2rem rgb(1, 57, 57);
+}
+
+.ftr {
+  margin: 0.5rem 2rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(rgba(87, 33, 101, 0.579), rgba(29, 73, 29, 0.744));
+  border-radius: 0.5rem;
+}
+.ftr .text {
+  color: rgb(182, 208, 255);
+  font-weight: bold;
+  font-family: monospace;
+}
+.ftr .scl {
+  text-align: right;
+}
+.ftr .scl .media {
+  font-size: 2.5rem;
+  color: rgb(255, 238, 47);
+  margin: 0 1rem;
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-color: blue;
+  }
+  .header {
+    padding: 1rem;
+    -webkit-backdrop-filter: blur(1rem);
+            backdrop-filter: blur(1rem);
+    position: inherit;
+  }
+  .header .logo h1 {
+    font-size: 2rem;
+    color: rgb(146, 83, 0);
+    font-family: fantasy;
+    font-style: italic;
+  }
+  .header .logo h1 span {
+    color: rgba(2, 76, 17, 0.829);
+  }
+  .header .bar {
+    display: block;
+    color: brown;
+    font-size: 2rem;
+    border: none;
+    padding: 0;
+  }
+  .header .bar:hover {
+    border-radius: 0.5rem;
+    border: none;
+  }
+  .navber {
+    display: none;
+    width: 100vw;
+    border-top: 0.3rem solid rgb(215, 215, 215);
+    height: 57vh;
+    background-color: rgba(255, 255, 255, 0.66);
+  }
+  .navber ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style: none;
+  }
+  .navber ul li {
+    font-size: 1.1rem;
+    margin: 0.1rem;
+    width: 15rem;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    text-align: left;
+  }
+  .navber ul li a {
+    color: rgb(10, 18, 1);
+    text-decoration: none;
+  }
+  .navber ul li a:hover {
+    color: rgb(1, 13, 23);
+    border: none;
+  }
+  .navber ul li:hover {
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    border: none;
+    color: aliceblue;
+    border-radius: 0.3rem;
+    background-color: rgba(130, 151, 151, 0.271);
+  }
+  .home {
+    overflow-x: hidden;
+    padding: 2rem;
+    margin: 0.2rem 0;
+    background-image: url("bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+  }
+  .home .nm {
+    -webkit-backdrop-filter: blur(1rem);
+            backdrop-filter: blur(1rem);
+    font-size: 3rem;
+    color: aliceblue;
+    margin: 0.5rem;
+    padding: 1rem;
+    font-family: cursive;
+    font-style: italic;
+    border-radius: 1rem;
+  }
+  .home .nm span {
+    color: rgba(224, 11, 153, 0.924);
+  }
+  .home h3 {
+    font-size: 2rem;
+    color: aqua;
+    -webkit-backdrop-filter: 1rem;
+            backdrop-filter: 1rem;
+    font-family: monospace;
+    font-style: italic;
+  }
+  .home .title {
+    -webkit-backdrop-filter: blur(1rem);
+            backdrop-filter: blur(1rem);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    color: rgb(138, 214, 214);
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: bold;
+  }
+  .education .row1 {
+    display: block;
+  }
+  .education .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .education .row .edu {
+    margin: 0.7rem;
+  }
+  .education .row2, .education .row3 {
+    margin-left: -66rem;
+  }
+  .education .rows {
+    margin-left: 0rem;
+    transition: 1.5s;
+  }
+  .education .row1 {
+    margin-right: -66rem;
+  }
+  .education .row1Anim {
+    margin-right: 0;
+    margin-left: 8px;
+    transition: 1.5s;
+  }
+  .portfolio .imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .portfolio .imgs .webDesign {
+    width: 18rem;
+  }
+  .portfolio .imgs .webDesign .wpim {
+    width: 18rem;
+    height: 12rem;
+    margin: 0.2rem;
+  }
+  .portfolio .imgs .grafixDsn {
+    width: 15rem;
+  }
+  .portfolio .imgs .grafixDsn .grim {
+    width: 15rem;
+    height: 10rem;
+    margin: 0.2rem;
+  }
+  .portfolio .imgs .grafixDsn .tall {
+    width: 15rem;
+    height: 20rem;
+    margin: 0.2rem;
+  }
+  .portfolio .imgs .codeer {
+    width: 15rem;
+  }
+  .portfolio .imgs .codeer .cdim {
+    width: 15rem;
+    height: 10rem;
+    margin: 0.2rem;
+  }
+  .contact {
+    margin: 2rem;
+  }
+  .contact .row .row2 .form {
+    margin: 1rem 0.5rem;
+    padding: 0rem;
+    text-align: center;
+  }
+  .contact .row .row2 .form .tens {
+    height: 3rem;
+    width: 80%;
+  }
+  .contact .row .row2 .form #textarea {
+    height: 10rem;
+    width: 100%;
+  }
+  .ftr .scl {
+    text-align: right;
+  }
+  .ftr .scl .media {
+    font-size: 2rem;
+    color: rgb(255, 238, 47);
+    margin: 0 0.2rem;
+  }
+}/*# sourceMappingURL=my-1.css.map */
