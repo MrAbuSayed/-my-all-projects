@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-2</title>
+
+    <!-- for CSS file link -->
+    <link rel="stylesheet" href="prtfl--4.css">
+    
+
+    <!-- For Bootstarp File Link -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- For Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+    <!-- For google  Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caramel&family=Cormorant+Upright:wght@700&family=Fascinate+Inline&family=Lobster&family=Sansita+Swashed:wght@300&family=Sevillana&display=swap" rel="stylesheet">
+   
+    <!-- Animate CSS CDN -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
+  />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.js" ></script>
+
+  </head>
+<body>
+    
+      
+ 
+
+
+  <div class="start container">
+
+           <!-- header start -->
+             <header class="header">
+                     
+                 <!-- navs Start -->
+
+                 <nav class="navbar navbar-expand-lg fixed-top container">
+                    <div class="container-fluid">
+                     
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        
+                       <span><i class="fa-solid fa-bars bar"></i></span> 
+                          
+
+                      </button>
+
+                      <a class="navbar-brand" href="#">
+                        <img class="nvimg" src="data:image/png;base64,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" alt="navimg">
+
+                      </a>
+                      <div class="collapse navbar-collapse " id="navbarText">
+                        
+                        
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center text-lg-right">
+                                <li class="nav-item">
+                                  <a class="nav-link text-center text-lg-right " aria-current="page" href="prtfl--4.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-center text-lg-right " aria-current="page" href="#About">About Me </a>
+                                  </li>
+
+                                  <li class="nav-item">
+                                    <a class="nav-link text-center text-lg-right" aria-current="page" href="#skill">My Skill</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link text-center text-lg-right " aria-current="page" href="#client-comment">Client Comment</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link text-center text-lg-right " aria-current="page" href="#contact">Contact Me</a>
+                                  </li>
+
+                                  <li class="nav-item">
+                                    <a class="nav-link text-center text-lg-right " aria-current="page" href="#">Subscribe</a>
+                                  </li>
+
+                                 
+                              </ul>
+                       
+                      </div>
+                    </div>
+                  </nav>
+
+                   <section id="banner">
+<!-- Learn Of me -->
+                    <div class="bnr-cntnr">
+                        <div class="bnr-cntn text-center">
+                            <h1 class="bnrh"> </h1>
+                            <h1 class="bnrh1"> </h1>
+                            <button class="bnrbtn"><a id="btna" href="#fetrs">Start Now</a></button>
+                        </div>
+                    </div>
+                    
+                    
+                   </section>
+
+                  <!-- navs ends -->
+
+             </header>
+        
+              <!-- header end -->
+                     
+        
+              <!-- main start -->
+        
+             <main>
+               
+
+                <section id="fetrs" class="text-center">
+
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="fetr-cl">
+                                <i class="fa-solid fa-hand-holding-dollar rounded-circle fetrs-icn"></i>
+                                <h5>Helloo mannd</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium sequi blanditiis dicta labore, quidem cumque!</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="fetr-cl">
+                                <i class="fa-solid fa-hand-holding-dollar rounded-circle fetrs-icn"></i>
+                                <h5>Helloo mannd</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium sequi blanditiis dicta labore, quidem cumque!</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="fetr-cl">
+                                <i class="fa-solid fa-hand-holding-dollar rounded-circle fetrs-icn"></i>
+                                <h5>Helloo mannd</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium sequi blanditiis dicta labore, quidem cumque!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- features end  -->
+
+                <!-- about me start -->
+
+                <section id="About">
+
+                   <div class="sec-titl ">
+                    <h3 class="text-center">About Me</h3>  
+                   
+                   </div>
+                       
+                   <div class="row">
+                     <div class="col-lg-5 col-md-6">
+
+                        <div class="dsc1 part1 ">
+                            <i class="fa-solid fa-user rounded-circle fetrs-icn"></i>
+                            <h4>Personal Info</h4>
+                            <p>Name : Abu Sayed</p>
+                            <p>Profession : Web Designer</p>
+                            <p>Address : Kutumbapur, Chandina ,Comilla</p>
+                            <p>Website : <a href="#" target="_blank">Abu Sayed</a></p>
+                            <button class="bnrbtn">Download CV</button>
+                        </div>
+
+                     </div>
+                   </div>
+                    
+                     <div class="row">
+
+                        <div class="col-lg-7 col-md-6">
+                     
+                        </div>
+                        <div class="col-lg-5 col-md-6">
+                          
+     
+                         <div class="dsc2 part1">
+                          
+                              <i class="fa-solid fa-trophy rounded-circle fetrs-icn"></i>
+                              
+                             <h4>Achivements</h4>
+                            
+                             <p><span class="font-weight-bold">Certificate : </span> A Web Designer Coarse Certificate from Programming Hero</p>
+                         </div>
+     
+                        </div>
+                     </div>
+
+                     <div id="skill" class="row">
+                        <div class="col-lg-5 col-md-6">
+   
+                           <div class="dsc3 part1">
+                            <i class="fa-solid fa-briefcase rounded-circle fetrs-icn"></i>
+                            <h4>My Skill</h4>
+
+                            <table>
+
+                               <tr>
+
+                                <td class="sklf"> HTML </td>
+                                <td>
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+
+                                    </span>
+                                </td>
+ 
+                               </tr>
+
+                               <tr>
+
+                                <td class="sklf"> CSS</td>
+                                <td>
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        
+                                    </span>
+                                </td>
+ 
+                               </tr>
+
+                               <tr>
+
+                                <td class="sklf">JS </td>
+                                <td>
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        
+                                    </span>
+                                </td>
+ 
+                               </tr>
+
+                               <tr>
+
+                                <td class="sklf"> Bootstarp </td>
+                                <td>
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        
+                                    </span>
+                                </td>
+ 
+                               </tr>
+
+                               <tr>
+
+                                <td class="sklf"> JQuary </td>
+                                <td>
+                                    <span >
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        
+                                    </span>
+                                </td>
+ 
+                               </tr>
+
+                               <tr>
+
+                                <td class="sklf">JSON </td>
+                                <td>
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        
+                                    </span>
+                                </td>
+ 
+                            </tr>
+
+
+
+                            </table>
+                           </div>
+   
+                        </div>
+                      </div>
+
+                </section>
+
+                <!-- about me ends-->
+
+
+                 <!-- Client Comment start -->
+
+                 <section id="client-comment">
+
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://i0.wp.com/www.arabamerica.com/wp-content/uploads/2016/10/pva-jb679-sheik-fagin-nose-prosthetic___5_CIN-WO124.jpg?resize=586%2C713&ssl=1" class="crim rounded-circle" alt="...">
+                           <h4>Abdullah Al Sihab</h4>
+                           <p>....Businessman</p>
+                           <p>Thank you abu sayed and for your work .You are good web site designer.</p>
+                        </div>
+                          <div class="carousel-item">
+                            <img src="https://i0.wp.com/current.org/wp-content/uploads/2015/03/Molly-Wood-hedshot.jpg?fit=1170%2C1376&ssl=1" class="crim rounded-circle"alt="...">
+                            <h4>Angela Zerry</h4>
+                            <p>.....Teacher of a School</p>
+                            <p>Thanks, You are a better website designer.your work very nice. </p>
+                        </div>
+                          <div class="carousel-item">
+                            <img src="https://i.guim.co.uk/img/media/ead48d020bfa52459345e37be2924da6dc8c77f5/0_99_3500_2100/master/3500.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=e3d985b3f783c244a5945db171c18c2c" class="crim rounded-circle" alt="...">
+                          <h4>Rovert kery</h4>
+                          <p>......Americn Navy</p>
+                          <p>Thanks, your design. I will do my next work with you. </p>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="https://biv.com/sites/default/files/styles/media_image/public/2017-12/jim_pattison-no-x.png?itok=O8FnJ1Zb" class="crim rounded-circle"  alt="...">
+                          <h4>Rovert kery</h4>
+                          <p>......Maichel Cly</p>
+                          <p>Thanks, your design. I will do my next work with you. </p>
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+
+
+                 </section>
+
+                  <!-- Client Comment Ends -->
+
+                  <!-- contact Start -->
+
+                      <section id="contact">
+                              
+
+                        <div class="cntchd"> <h2> CONTACT ME</h2></div>
+
+                       <div class="form">
+                        <form action="https://formspree.io/f/xlekroyv" method="post">
+                            
+                            <input type="text" class="nes" name="Name" placeholder="Enter Your Name " required><p>
+
+                            <input type="email" class="nes" name="Email" id="" placeholder="Inter Your Mail" required><br>
+                            <input type="text" class="nes" name="Subject" id="" placeholder="Inter Your Subject" required><br>
+
+                            <textarea name="Comments" id="textarea"></textarea> <p> 
+
+                               <button class="cnbtn1" type="submit">SUBMIT</button>
+                               <button class="cnbtn2" type="reset">CLEAR</button>
+                        </form>
+                       </div>
+
+                        
+
+                      </section>
+                  <!-- contact ends -->
+
+                  
+
+             </main>
+        
+            <!-- main end-->
+        
+        
+             <!-- Footter start -->
+                 
+              <footer>
+                  
+               <section id="ftr">
+
+                <div class="row">
+                    <div class=" ftr1 text-center col-lg-6">
+
+                        <p>&copy;Copyright ABU-SAYED.......</p>
+                          <p>All Right Reserved</p>
+
+                    </div>
+
+                    <div class="col-lg-6">
+                        
+                        <a href="https://web.facebook.com/profile.php?id=100049015728694" class="ftrlnk" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.instagram.com/abu__sayed_1/" class="ftrlnk" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/home" class="ftrlnk" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://bd.linkedin.com/" class="ftrlnk" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/abusayed123as" class="ftrlnk" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://web.telegram.org/z/" class="ftrlnk" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                         
+
+
+                    </div>
+
+                </div>
+             
+                     
+                     
+                 
+
+               </section>
+              </footer>
+              
+             <!-- Footter Ends -->
+        
+  </div>
+
+
+
+ 
+
+
+
+  <!-- JQuary Wayoint CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+
+    <!-- For  bootstarp JS CDN -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+<!-- For JQuary CDN link -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+ <!-- For JS FILE -->
+ <script src="prtfl--4.js"></script>
+
+</body>
+</html>
